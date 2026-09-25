@@ -950,16 +950,16 @@ html:not(.js) [data-hero]{ opacity: 1; transform: none; }
 .gallery{ padding-block: var(--section-y); }
 
 .masonry{
-  columns: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
-@media (min-width: 640px){ .masonry{ columns: 2; } }
-@media (min-width: 1020px){ .masonry{ columns: 3; } }
+@media (min-width: 640px){ .masonry{ grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1020px){ .masonry{ grid-template-columns: repeat(4, 1fr); } }
 
 .masonry-item{
-  break-inside: avoid;
-  margin-bottom: 16px;
   position: relative;
+  aspect-ratio: 1 / 1;
   border-radius: var(--radius-m);
   overflow: hidden;
   border: 1px solid var(--line);
@@ -967,6 +967,8 @@ html:not(.js) [data-hero]{ opacity: 1; transform: none; }
 }
 .masonry-item img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: transform 0.9s var(--ease);
 }
