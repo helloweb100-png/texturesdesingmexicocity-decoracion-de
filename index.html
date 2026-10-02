@@ -27,8 +27,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap">
 <link rel="preload" as="image" href="img/1.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="logo.png">
 <link rel="stylesheet" href="styles.css">
 
 <script type="application/ld+json">
@@ -112,7 +113,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="#inicio" class="brand">
-      <img src="logo.jpg" alt="" class="brand-mark" width="40" height="40">
+      <img src="logo.png" alt="" class="brand-mark" width="64" height="64">
       <span class="brand-word">Textures Design<small>Texturas &amp; interiores &middot; CDMX</small></span>
     </a>
     <nav class="main-nav" aria-label="Navegacion principal">
@@ -162,21 +163,26 @@
     <canvas id="particles-canvas" aria-hidden="true"></canvas>
     <div class="hero-frame" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <p class="eyebrow hero-eyebrow" data-hero>Revestimientos y texturas &middot; CDMX</p>
-      <h1 class="hero-title">
-        <span class="line" data-hero><span class="line-inner">Texturas y acabados</span></span>
-        <span class="line" data-hero><span class="line-inner shine">hechos a tu medida.</span></span>
-      </h1>
-      <p class="hero-desc" data-hero>Diseñamos e instalamos cada acabado de tu espacio en la Ciudad de México, con materiales seleccionados y medidas exactas.</p>
-      <div class="hero-cta" data-hero>
-        <a href="https://wa.me/525549062497?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20con%20Textures%20Design." target="_blank" rel="noopener" class="btn btn-primary btn-lg magnetic">
-          <svg class="btn-icon"><use href="#i-whatsapp"/></svg>
-          <span>Cotiza por WhatsApp</span>
-        </a>
-        <a href="#galeria" class="btn btn-outline btn-lg magnetic">
-          <span>Ver proyectos</span>
-          <svg class="btn-icon"><use href="#i-arrow"/></svg>
-        </a>
+      <div class="hero-logo" data-hero>
+        <img src="logo.png" alt="Logotipo de Textures Design" width="1024" height="1024" fetchpriority="high">
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow" data-hero>Revestimientos y texturas &middot; CDMX</p>
+        <h1 class="hero-title">
+          <span class="line" data-hero><span class="line-inner">Texturas y&nbsp;acabados</span></span>
+          <span class="line" data-hero><span class="line-inner shine">hechos a tu medida.</span></span>
+        </h1>
+        <p class="hero-desc" data-hero>Diseñamos e instalamos cada acabado de tu espacio en la Ciudad de México, con materiales seleccionados y medidas exactas.</p>
+        <div class="hero-cta" data-hero>
+          <a href="https://wa.me/525549062497?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20con%20Textures%20Design." target="_blank" rel="noopener" class="btn btn-primary btn-lg magnetic">
+            <svg class="btn-icon"><use href="#i-whatsapp"/></svg>
+            <span>Cotiza por WhatsApp</span>
+          </a>
+          <a href="#galeria" class="btn btn-outline btn-lg magnetic">
+            <span>Ver proyectos</span>
+            <svg class="btn-icon"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -202,11 +208,11 @@
   </section>
 
   <!-- ============ SERVICIOS ============ -->
-  <section class="services" id="servicios" aria-labelledby="servicios-title">
+  <section class="services theme-light" id="servicios" aria-labelledby="servicios-title">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow" data-reveal>Lo que hacemos</p>
-        <h2 class="section-title" id="servicios-title" data-reveal>Especialistas en revestimientos y acabados de interior</h2>
+        <h2 class="section-title" id="servicios-title" data-reveal>Especialistas en <em class="accent">revestimientos</em> y acabados de interior</h2>
         <p class="section-desc" data-reveal>Seis oficios, un solo equipo: de la medicion a la instalacion final, sin subcontratar el detalle.</p>
       </div>
 
@@ -268,7 +274,7 @@
   <section class="process" id="proceso" aria-labelledby="proceso-title">
     <div class="container container--narrow">
       <div class="section-head">
-        <h2 class="section-title" id="proceso-title" data-reveal>De la primera visita a la instalacion final</h2>
+        <h2 class="section-title" id="proceso-title" data-reveal>De la primera visita a la <em class="accent">instalacion</em> final</h2>
         <p class="section-desc" data-reveal>Cuatro pasos, un solo interlocutor. Asi trabajamos cada proyecto en la Ciudad de Mexico.</p>
       </div>
 
@@ -310,16 +316,16 @@
     <div class="banner-bg"></div>
     <div class="banner-veil" aria-hidden="true"></div>
     <div class="container banner-content">
-      <h2 data-reveal>Cada acabado se piensa como parte de un mismo espacio, no como una pieza aislada.</h2>
+      <h2 data-reveal>Cada acabado se piensa como parte de <em class="accent">un mismo espacio</em>, no como una pieza aislada.</h2>
     </div>
   </section>
 
   <!-- ============ GALERIA ============ -->
-  <section class="gallery" id="galeria" aria-labelledby="galeria-title">
+  <section class="gallery theme-light" id="galeria" aria-labelledby="galeria-title">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow" data-reveal>Proyectos recientes</p>
-        <h2 class="section-title" id="galeria-title" data-reveal>Espacios que ya transformamos</h2>
+        <h2 class="section-title" id="galeria-title" data-reveal>Espacios que ya <em class="accent">transformamos</em></h2>
         <p class="section-desc" data-reveal>Una muestra de instalaciones reales en casas y departamentos de la Ciudad de Mexico.</p>
       </div>
 
@@ -368,7 +374,7 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow" data-reveal>Cotiza tu proyecto</p>
-        <h2 class="section-title" id="contacto-title" data-reveal>Cuentanos como es tu espacio</h2>
+        <h2 class="section-title" id="contacto-title" data-reveal>Cuentanos como es <em class="accent">tu espacio</em></h2>
         <p class="section-desc" data-reveal>Escribenos por WhatsApp o llena el formulario. Respondemos personalmente, sin bots ni catalogos genericos.</p>
       </div>
 
@@ -461,7 +467,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#inicio" class="brand">
-          <img src="logo.jpg" alt="Textures Design" class="brand-mark" width="40" height="40">
+          <img src="logo.png" alt="Textures Design" class="brand-mark" width="64" height="64">
           <span class="brand-word">Textures Design<small>Texturas &amp; interiores &middot; CDMX</small></span>
         </a>
         <p>Estudio de revestimientos y texturas de interior en la Ciudad de Mexico. Cortinas, persianas, muros, pisos y acabados hechos a la medida de cada espacio.</p>
